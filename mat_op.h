@@ -1,15 +1,15 @@
-#ifndef __mat_op_h__
-#ifndef __stdio_h__
 #include <stdio.h>
 #endif
 #ifndef __man_dat_h__
 #include "man_dat.h"
 #endif
+#include "funcionsuma.h"
+#include "funcionresta.h"
 #define __mat_op_h__
 #define PROD 1
 #define SUM 2
 #define REST 3
-
+ int dim_mat2[0], dim_mat1[0];
 static int i, j, k, l, m;
 /**Un espacio de memoria estaba resultando errone, no encontré un causante, salvaré el valor*/
 static float **matriz1 = NULL, **matriz2 = NULL;
@@ -74,14 +74,18 @@ float** Operacion_de_matriz(float **r_matriz, int ope){
             printf("La matriz no es adecuada para este proceso, el numero de filas de la matriz 1 debe concordar con las columnas de la matriz 2\n");
             return 0;
 		}
+
 	}
-/**
-Aun sin contenido
+
+
+
 	else if(ope == SUM || ope == REST){
         if((dim_mat1[0] == dim_mat2[0] && dim_mat1[1] == dim_mat2[1])){
             if(ope == SUM){
+                    suma_matriz();
             }
             else{
+                  resta_matriz();
             }
         }
         else{
@@ -89,7 +93,7 @@ Aun sin contenido
             return 0;
         }
 	}
-	*/
+
 	return 0;
 }
 #endif
