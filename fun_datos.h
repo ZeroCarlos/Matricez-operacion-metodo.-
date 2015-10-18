@@ -14,4 +14,4 @@ void operador_metodo_gauss(int Dim, float Sist[][100]);
 //int val[max][max];
 /*int cantidad;
 int g_cont, g_cont1;
-int ecuaciones[100][100];*/
+int Sist[100][100];*/
