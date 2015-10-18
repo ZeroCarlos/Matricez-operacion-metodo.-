@@ -30,7 +30,7 @@ int main(){
             scanf("%d", &seleccion);
             switch(seleccion){
                 case 1:
-                  //  gauss_jordan();
+         gauss_jordan();
                 case 2:
          ing_igc(&Dimension,Sistema);
          printf("\n\n\nSistema introducido: \n\n");
