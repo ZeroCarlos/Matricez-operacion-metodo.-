@@ -7,8 +7,8 @@
 #include "fun_datos.h"
 
 int main(){
-    int c,Dimension;
-    float Sistema[100][100];
+    int c,car;
+    float sistema[100][100];
     int seleccion = 0;
     float **r_matriz = NULL;
     do{
@@ -30,15 +30,15 @@ int main(){
             scanf("%d", &seleccion);
             switch(seleccion){
                 case 1:
-         gauss_jordan();
+                  //  gauss_jordan();
                 case 2:
-         ing_igc(&Dimension,Sistema);
+         ing_igc(&car,sistema);
          printf("\n\n\nSistema introducido: \n\n");
-         imp_sis(Dimension,Sistema);
-         operador_metodo_gauss(Dimension,Sistema);
+         imp_sis(car,sistema);
+         operador_metodo_gauss(car,sistema);
          printf("\n\n\nLas solucion es:\n");
-         for(c=1;c<=Dimension;c++){
-        printf("\n X%d=%f\n",c,Sistema[c][Dimension+1]);
+         for(c=1;c<=car;c++){
+        printf("\n X%d=%f\n",c,sistema[c][car+1]);
     }
                 case 3:
                 default:
@@ -62,4 +62,3 @@ int main(){
     scanf("");
     return 0;
 }
-
