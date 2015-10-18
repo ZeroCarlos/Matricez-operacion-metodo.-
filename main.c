@@ -4,9 +4,11 @@
 #include "mat_op.h"
 #include "man_dat.h"
 #include "funcionsuma.h"
+#include "funcionresta.h"
 #include "fun_datos.h"
 
 int main(){
+
     int c,car;
     float sistema[100][100];
     int seleccion = 0;
@@ -30,7 +32,8 @@ int main(){
             scanf("%d", &seleccion);
             switch(seleccion){
                 case 1:
-                  //  gauss_jordan();
+                  gauss_jordan();
+                  break;
                 case 2:
          ing_igc(&car,sistema);
          printf("\n\n\nSistema introducido: \n\n");
@@ -40,6 +43,7 @@ int main(){
          for(c=1;c<=car;c++){
         printf("\n X%d=%f\n",c,sistema[c][car+1]);
     }
+    break;
                 case 3:
                 default:
                     break;
