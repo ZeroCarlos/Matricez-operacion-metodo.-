@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include "Metodos/gauss_jordan.h"
+#include "Metodos/gauss_jordan.h"
 #include "mat_op.h"
 #include "man_dat.h"
 #include "funcionsuma.h"
