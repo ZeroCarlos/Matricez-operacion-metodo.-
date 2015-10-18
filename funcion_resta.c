@@ -2,8 +2,8 @@
 
 void resta_matriz(){
 int f,c,f1,c1,f2,c2,i,j,a,cont,p;
-printf("¿Cuantas matrices desea sumar?");
-printf("\n1Resta de dos matrices\n2Resta de tres matrices\n3Suma de cuatro matrices o mas\n");
+printf("¿Cuantas matrices desea restar?");
+printf("\n1Resta de dos matrices\n2Resta de tres matrices\n3Resta de cuatro matrices o mas\n");
 scanf("%d",&p);
 if(p==1){
 printf ("Resta de dos matrices");
@@ -47,7 +47,7 @@ printf("\n\t");
            for(j=1;j<=c;j++)
            {
               matrizC[i][j]=matrizA[i][j] - matrizB[i][j];
-              printf("\nLa suma es:");
+              printf("\nLa resta es:");
               printf("(%i,%i):",i,j);
               printf("%i",matrizC[i][j]);
            }
@@ -117,7 +117,7 @@ int matrizA[10][10],matrizB[10][10],matrizC[10][10], matrizD[10][10],matrizR[10]
         for(j=1;j<=c;j++)
            {
               matrizR[i][j]=matrizC[i][j] - matrizD[i][j];
-             printf("\nLa suma es:");
+             printf("\nLa resta es:");
               printf("(%i,%i):",i,j);
              printf("%i",matrizR[i][j]);
            }
@@ -132,4 +132,3 @@ if (p==3){
           getch();
 
        }
-
