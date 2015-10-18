@@ -49,7 +49,12 @@ printf("\n\t");
               matrizC[i][j]=matrizA[i][j] + matrizB[i][j];
               printf("\nLa suma es:");
               printf("(%i,%i):",i,j);
-              printf("%i",matrizC[i][j]);
+              printf("%i",matrizC[i][j]);;
+            /*  for(a=1;a<=Dim;a++){
+        for(b=1;b<=(Dim+1);b++){
+            printf("%7.2f",Sist[a][b]);
+            if(b==Dim) printf("   |");}
+        printf("\n");*/
            }
         }
           getch();
