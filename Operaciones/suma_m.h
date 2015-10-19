@@ -1,4 +1,6 @@
-#include "funcionsuma.h"
+#ifndef __suma_m_h__
+#include <stdio.h>
+#define __suma_m_h__
 
 void suma_matriz(){
 int f,c,f1,c1,f2,c2,i,j,a,cont,p;
@@ -137,4 +139,4 @@ if (p==3){
           getch();
 
        }
-
+#endif
