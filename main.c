@@ -2,14 +2,13 @@
 #include <stdlib.h>
 #include "Metodos/gauss_jordan.h"
 #include "Metodos/m_inversa.h"
-#include "mat_op.h"
+#include "Operaciones/mat_op.h"
+#include "Operaciones/suma_m.h"
+#include "Operaciones/resta_m.h"
 #include "man_dat.h"
-#include "funcionsuma.h"
-#include "funcionresta.h"
 #include "fun_datos.h"
 
 int main(){
-
     int c,car;
     float sistema[100][100];
     int seleccion = 0;
@@ -22,12 +21,24 @@ int main(){
         case 1:
             puts("Operaciones de resolucion de matrices\n\t1. Multiplicacion\n\t2. Suma\n\t3. Resta");
             scanf("%d", &seleccion);
-            r_matriz = Operacion_de_matriz(r_matriz, seleccion);
-            extern int dim_mat3[];
-            puts("\tMatriz Resultante:");
-            printp(r_matriz, dim_mat3);
-            liberacion(dim_mat3, r_matriz);
-            break;
+            switch(seleccion){
+                case 1:
+                r_matriz = Operacion_de_matriz(r_matriz);
+                extern int dim_mat3[];
+                puts("\tMatriz Resultante:");
+                printp(r_matriz, dim_mat3);
+                liberacion(dim_mat3, r_matriz);
+                break;
+                case 2:
+                suma_matriz();
+                break;
+                case 3:
+                resta_matriz();
+                break;
+                default:
+                puts("La operacion especificada no esta definida");
+                seleccion = 1;
+            }
         case 2:
             puts("Metodos de resolucion de matrices\n\t1.Gauss Jordan\n\t2. Gauss\n\t3. Matriz inversa\n");
             scanf("%d", &seleccion);
