@@ -2,9 +2,6 @@
 #ifndef __stdio_h__
 #include <stdio.h>
 #endif
-#ifndef __stdio_h__
-#include <stdio.h>
-#endif
 #define __m_inversa_h__
 
 int inverza(){
