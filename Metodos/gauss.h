@@ -1,6 +1,8 @@
-#include"fun_datos.h"
-
-
+#ifndef __gauss_h__
+#ifndef __stdio_h__
+#include <stdio.h>
+#endif
+#define __gauss_h__
 
 void ing_igc(int *num,float Sist[][100]){
     int a,b;
@@ -29,13 +31,13 @@ void imp_sis(int Dim, float Sist[][100])
             printf("%7.2f",Sist[a][b]);
             if(b==Dim) printf("   |");}
         printf("\n");
-    }}
+    }
+}
 
 void operador_metodo_gauss(int Dim, float Sist[][100])
 {
     int nc,Col,c1,c2,a;
     float cambio,Vectr1;
-
     for(Col=1;Col<=Dim;Col++){
         nc=0;a=Col;
         while(nc==0){
@@ -58,3 +60,4 @@ void operador_metodo_gauss(int Dim, float Sist[][100])
         Sist[c1][Col]=0;
     }
 }
+#endif

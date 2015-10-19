@@ -1,4 +1,7 @@
-#include "funcionresta.h"
+#ifndef __resta_m_h__
+#include <stdio.h>
+#include <stdlib.h>
+#define __resta_m_h__
 
 void resta_matriz(){
 int f,c,f1,c1,f2,c2,i,j,a,cont,p;
@@ -132,3 +135,4 @@ if (p==3){
           getch();
 
        }
+#endif
