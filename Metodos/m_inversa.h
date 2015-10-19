@@ -5,7 +5,7 @@
 #ifndef __stdio_h__
 #include <stdio.h>
 #endif
-#definde __m_inversa_h__
+#define __m_inversa_h__
 
 int inverza(){
     int i=0,n=0;
@@ -119,9 +119,4 @@ printf("|%g|     |%g|    |%g|     |X|   =   %g       |%g|   |%g|   |%g| \n",matr
 printf("|%g|     |%g|    |%g|     |Y|   =   %g       |%g|   |%g|   |%g|\n",matriz[1][0],matriz[1][1],matriz[1][2],matriz[1][3],matriz_identidad[1][0],matriz_identidad[1][1],matriz_identidad[1][2]);
 printf("|%g|     |%g|    |%g|     |Z|   =   %g       |%g|   |%g|   |%g|\n",matriz[2][0],matriz[2][1],matriz[2][2],matriz[2][3],matriz_identidad[2][0],matriz_identidad[2][1],matriz_identidad[2][2]);
 return 0;}
-int main()
-{
-inverza();
-    return 0;
-}
 #endif
